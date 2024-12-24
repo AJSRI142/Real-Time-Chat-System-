@@ -46,6 +46,35 @@ void initialize_winsock() {
     }
     #endif
 }
+/*
+void get_current_ip{
+    char hostbuffer[256];
+    char *IPbuffer;
+    struct hostent *host_entry;
+    int hostname;
+
+    // To retrieve hostname
+    hostname = gethostname(hostbuffer, sizeof(hostbuffer));
+    if (hostname == -1) {
+        std::cerr << "Unable to get hostname\n";
+        exit(1);
+    }
+
+    // To retrieve host information
+    host_entry = gethostbyname(hostbuffer);
+    if (host_entry == NULL) {
+        std::cerr << "Unable to get host IP\n";
+        exit(1);
+    }
+
+    // To convert an Internet network address into ASCII string
+    IPbuffer = inet_ntoa(*((struct in_addr*)host_entry->h_addr_list[0]));
+
+    std::cout << "Server IP: " << IPbuffer << "\n";
+
+}
+*/
+
 
 int main() {
     initialize_winsock();
