@@ -9,7 +9,7 @@ client: client.o
 client.o: client.cpp client.h
 	g++ -c client.cpp
 
-sever.o: server.cpp server.h
+server.o: server.cpp server.h
 	g++ -c server.cpp
 
 clean: 
