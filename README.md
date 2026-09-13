@@ -18,7 +18,7 @@ provides reliable bidirectional communication between clients.
 
 ## How to Run
 
-
+This project uses a Makefile to simplify compilation. Run make to build the server, then start it with ./server. To build and run a client, use make client followed by ./client. Multiple clients can be started in separate terminals to connect to the server.
 
 ## What I Learned
 
